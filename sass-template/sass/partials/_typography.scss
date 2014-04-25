@@ -1,0 +1,47 @@
+body {
+	font-family: $base-font-family;
+	color: $text-black;
+	font-size: $base-font-size;
+}
+
+h1, h2, h3, h4, h5, h6, .headline {
+	color: $text-black;
+	font-size: $header-font-size;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.text-smaller {
+	font-size: $base-font-smaller;
+}
+
+.text-small {
+	font-size: $base-font-small;
+}
+
+.text-base {
+	font-size: $base-font-size;
+}

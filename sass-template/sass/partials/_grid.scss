@@ -1,0 +1,77 @@
+// this is fixed column grid sisten
+// Based on 960_grid
+
+$width	:	1280px;
+$cols 	:	20;
+$gutter :	10px;
+
+$column_width : 100% / $cols;
+
+.main-wrapper {
+	@extend .relative;
+	@extend .clearfix;
+	@extend .box-model;
+	width: $width;
+}
+
+.grid {
+	@extend .relative;
+	@extend .clearfix;
+	@extend .box-model;
+	display: block;
+	float: left;
+	// padding: 10px 0;
+}
+
+.grid_parent {
+	@extend .relative;
+}
+
+.box-model {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.relative {
+	position: relative;
+}
+
+@for $i from 1 through $cols {
+	$col_name : 100 / $cols;
+	.grid_#{$col_name * $i} {
+		@extend .grid;
+		width: $column_width * $i;
+
+		// $j	:	$i;
+
+		// @for $j from 1 through $cols {
+		// 	&.prefix_#{$col_name * $j} {
+		// 		@extend .relative;
+		// 		margin-left: $column_width * $j;
+
+		// 		@media only screen and (min-width: $phone_p) and (max-width: $tablet_l) {
+		// 			margin-left: 0;
+		// 		}
+		// 	}
+		// }
+
+		// @for $j from 1 through $cols {
+		// 	&.suffix_#{$col_name * $j} {
+		// 		@extend .relative;
+		// 		margin-right: $column_width * $j;
+		// 	}
+		// }
+	}
+}
+
+/* Grids with childrens .west is left, .east is right
+----------------------------------------------------------------------------------------------------*/
+
+.west {
+	margin-left: 0;
+}
+
+.east {
+	margin-right: 0;
+}

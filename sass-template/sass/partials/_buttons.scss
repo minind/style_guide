@@ -1,0 +1,21 @@
+.button {
+	@extend .inline-block;
+	background: $bg-dark;
+	color: $text-white;
+	padding: 5px 10px;
+	border: none;
+	text-transform: uppercase;
+	font-size: $base-font-small;
+	cursor: pointer;
+}
+
+.button-dark {
+	@extend .button;
+	background: $bg-dark;
+}
+
+.button-yellow {
+	@extend .button;
+	background: $bg-yellow;
+	color: $text-dark;
+}

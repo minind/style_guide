@@ -1,0 +1,57 @@
+//breakpoints
+$large-screen 			: 1767px;
+$additional 			: 1490px;
+$desktops 				: 1224px;
+$tablet-l 				: 1024px;
+$tablet-p 				: 768px;
+$phone-l 				: 480px;
+$phone-p				: 319px;
+
+// Font weights
+$regular: 400;
+$bold: 700;
+
+// Base Fonts
+$base-font-family 		: 'PT Sans', sans-serif;
+$base-font-weight 		: $regular;
+$base-font-size 		: 16px;
+$base-font-larger 		: 17px;
+$base-font-large 		: 18px;
+$base-font-smaller 		: 14px;
+$base-module 			: 13px;
+$base-font-small 		: 12px;
+$base-font-small-caps 	: 10px;
+$base-line-height 		: 1;
+
+// Headings
+$header-font-weight 	: $regular;
+$header-font-larger 	: 30px;
+$header-font-size 		: 24px;
+$header-font-smaller 	: 22px;
+
+//backgrounds
+$bg-black 				: #000;
+$bg-yellow 				: #e5e548; 
+$bg-dark 				: #2d2d2d;
+$bg-white 				: #fff;
+$bg-currency_pos 		: #cee8db;
+$bg-currency_neg 		: #e5e548;
+$bg-secrch-unactive 	: #b0bcba;
+$bg-banner 				: #d2d2d2;
+$bg-gray-light 			: #cfcfcf;
+$bg-search-li 			: #b0bcba;
+$bg-search-li-hover 	: #cee8db;
+$bg-search-li-top		: #cfcfcf;
+
+//border
+$border-module 			: #3e3e3e;
+
+ //text
+$text-dark 				: #2d2d2d;
+$text-yellow 			: #e5e548;
+$text-white 			: #fff;
+$text-black 			: #000;
+$text-currency 			: #39392f;
+$text-gray 				: #7e7e7e;
+$text-module-desc  		: #4d5051;
+$text-placeholder 		: #707070;
